@@ -13,5 +13,6 @@ end
  end
 
  get '/cat' do
-   send_file'./views/cat.html'
+  @name = ["Amigo", "Oscar", "Viking"].sample
+  erb(:index)
  end
